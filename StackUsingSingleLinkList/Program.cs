@@ -20,7 +20,7 @@ namespace StackUsingSingleLinkList
     class Stack
     {
         node top;
-        public Stack()
+        public void Stacks()
         {
             top = null;
         }
@@ -61,9 +61,6 @@ namespace StackUsingSingleLinkList
                 }
             }
         }
-    }
-    class progam
-    {
         static void Main(string[] args)
         {
             Stack s = new Stack();
@@ -76,7 +73,7 @@ namespace StackUsingSingleLinkList
                 Console.WriteLine("3. Display");
                 Console.WriteLine("4. Exit");
                 Console.Write("\nEnter your choice: ");
-                string Input =  Console.ReadLine();
+                string Input = Console.ReadLine();
                 char ch = Convert.ToChar(Input == "" ? "0" : Input);
                 switch (ch)
                 {
@@ -87,7 +84,7 @@ namespace StackUsingSingleLinkList
                         break;
 
                     case '2':
-                        if(s.empty())
+                        if (s.empty())
                         {
                             Console.WriteLine("\nStack Empty");
                             break;
@@ -98,11 +95,23 @@ namespace StackUsingSingleLinkList
                     case '3':
                         s.display();
                         break;
+
+                    case '4':
+                        return;
+                    default:
+                        Console.WriteLine("\nInvalid choice");
+                        break;
+
+
+
                 }
 
             }
         }
     }
-    
 }
+   
+        
+    
+
 
