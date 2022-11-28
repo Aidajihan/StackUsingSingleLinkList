@@ -10,13 +10,25 @@ namespace StackUsingSingleLinkList
     {
         public int info;
         public node next;
-        public node(int i,node n)
+        public node(int i, node n)
         {
-
-        }
-
-        static void Main(string[] args)
-        {
+            info = i;
+            next = n;
         }
     }
+
+    class Stack
+    {
+        node top;
+        public Stack()
+        {
+            top = null;
+        }
+    }
+
+
+    static void Main(string[] args)
+    {
+    }
 }
+
